@@ -21,4 +21,4 @@ script:
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - echo "$FAVORITE_FOOD"
-  - docker push philchrist/travis-simple-node
+  - docker push DOCKERHUB/travis-simple-node
